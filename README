@@ -1,0 +1,96 @@
+Kunal Maiti (kmaiti1@jhu.edu)
+
+To play the game, run "python main.py".
+
+TO SKIP TO THE NEXT LEVEL, hit 'C'.
+
+------
+
+ASSIGNMENT 12 IMPROVEMENTS
+
+o  Boss art:
+	Fireballs, a burning background, and a Mark Twain injured sprite!
+o  Boss mechanics:
+	Check out all the new types of boss attack patterns
+o  Joystick integration:
+	Go crazy if this is your thing!
+
+-----
+
+From the title screen, hitting any key enters the menu. From the menu,
+the user can enter the game, view the high scores, enter the options
+menu or quit the game.
+
+In the options menu, the player can clear the high scores. The adjust
+volume and adjust brightness options are also present, but not implemented.
+
+In the game, move with the arrow keys, hitting 'up' to jump. 
+Points are awarded for killing the enemies by jumping on them, 
+or hitting space which releases a soundwave attack, and upon
+completion of the level the remaining time is added to the score.
+
+------
+
+main.py: the main animation loop and basic game logic.
+It loads the background images from tiles.txt and reads specifications 
+(for platforms, enemies, triggers)from sprites.txt
+
+player.py: the player class 
+It contains image of the main character, 
+sound when player-controlled character hits the wall, 
+and basic movements(including move left, right and jump).
+
+enemy.py: the enemy class
+It contains the image and basic movement of enemies.
+As for now, we have 3 different types of enemies: FlytingEnemy, PlatformEnemy(book), 
+						  and GhostEnemy
+
+soundwave.py: the class for soundwave attack
+It contains image of soundwaves and animation of this type of attack.
+
+globes.py contains the Globals class, which has all the global variables.
+Game state classes are contained in title.py, menu.py, game.py, score.py.
+
+trigger.py: the trigger class
+creates trigger objects based on instructions in sprites.txt
+
+endgame.py:
+camera.py:
+gameove.py:
+menu.py:
+options.py:
+
+platform.py: the platform class
+creates platform objects based on instructions in sprites.txt
+
+score.py:
+scorelist.py:
+state.py:
+title.py:
+wolrd.py:
+
+dimensions.txt:
+highscores.txt: keeps the highscores for the game
+map.txt:
+
+sprites.txt: defines the position of platforms, enemies and triggers
+P for Platform, followed by topleft(x1, y1) and bottomright(x2, y2) coordinates
+PE for PlatformEnemy, the P right above defines the platform for it
+FE for FlyingEnemy, followed by xrange
+GE for GhostEnemy, followed by position (x, y)
+TRPE for PlatformEnemy, followed by topleft(x1, y1) and bottomright(x2, y2) 
+						of the platform it is at
+TRFE for FlyingEnemy, followed by xrange
+TRGE for GhostEnemy, followed by position (x, y)
+
+tiles.txt: mapping for backgroup image files
+
+-
+
+Music credits: Dennis (https://soundcloud.com/game-sountracks)
+	highscore.ogg - "Nuir ein Track - 04"
+	title.ogg - "Soundtrack - Das Fragezeichen - Map"
+	game.ogg - "Soundtrack - Wald"
+All sound effects altered from the following freesound source:
+	http://www.freesound.org/people/AndreOnate/sounds/160964/
+

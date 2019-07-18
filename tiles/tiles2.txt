@@ -1,0 +1,3 @@
+. bg/background07.png
+, bg/background06.png
+; bg/background05.png

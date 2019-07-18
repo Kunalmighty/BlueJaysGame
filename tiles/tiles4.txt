@@ -1,0 +1,4 @@
+. bg/background11.png
+, bg/background12.png
+; bg/background13.png
+1 bg/background12a.png

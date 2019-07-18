@@ -1,0 +1,2 @@
+1 bg/black1.png
+. bg/black.png

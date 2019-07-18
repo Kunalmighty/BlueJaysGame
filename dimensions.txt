@@ -1,0 +1,20 @@
+total width x height
+
+playersprite/flip:
+idlesprite/flip:
+jumpleft/right:
+
+enemysprite/flip:
+ghostspriteleft/right: 280 x 150
+
+deadbookright/left: 145 x 57
+deadghostspriteright/left: 560 x 155
+
+bookplatform1: 100 x 40
+bookplatform2: 140 x 80
+
+bookpile: 164 x 160
+table: 283 x 200
+tablebooks: 295 x 300
+spikes: 92 x 60
+hole: 200 x 67

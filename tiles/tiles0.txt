@@ -1,0 +1,2 @@
+. bg/stairs1.png
+, bg/stairs2.png
